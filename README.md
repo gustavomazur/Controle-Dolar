@@ -2,6 +2,11 @@
 
 Projeto com backend em FastAPI e frontend em React + Vite + TypeScript.
 
+## Sobre o desenvolvimento
+
+- **Backend** — desenvolvido por Gustavo Bueno Mazur.
+- **Frontend** — desenvolvido por IA, com o objetivo de dar ao projeto um design mais interativo.
+
 ## Estrutura
 
 - `app/` — API FastAPI (backend)
