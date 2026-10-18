@@ -1,6 +1,6 @@
 # Controle de Dólar
-FRONTEND desevolvida com IA é back end desenvolvido por mim 
-Projeto com backend em FastAPI e frontend em React + Vite + TypeScript.
+
+O projeto foi desenvolvido para cadastrar produtos em dólares e converter os valores para reais. Ele surgiu de um problema que minha namorada enfrentava no dia a dia: precisava anotar tudo no papel, somar os valores manualmente e consultar o preço de cada produto e os clientes relacionados a cada um dos produto. A ideia foi justamente resolver esse problema, tornando o processo mais prático, rápido e orgnizado.
 
 ## Sobre o desenvolvimento
 
