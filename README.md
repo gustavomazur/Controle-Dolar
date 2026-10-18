@@ -1,5 +1,5 @@
 # Controle de Dólar
-
+FRONTEND desevolvida com IA é back end desenvolvido por mim 
 Projeto com backend em FastAPI e frontend em React + Vite + TypeScript.
 
 ## Sobre o desenvolvimento
