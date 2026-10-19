@@ -11,3 +11,4 @@ def test_post(client, test_post):
                                    "preco_do_produto_em_dolar": new_dolar["preco_do_produto_em_dolar"],
                                    "preco_do_produto_em_reais": (new_dolar["preco_dolar"] 
                                                                  * new_dolar["preco_do_produto_em_dolar"])}
+     
