@@ -35,10 +35,9 @@ VITE_API_URL=http://localhost:8000
 
 ### Opção 1 — um comando (API + frontend juntos)
 
-Na pasta `frontend/`:
+Na raiz do projeto:
 
 ```bash
-cd frontend
 npm install
 npm run dev
 ```
@@ -47,10 +46,6 @@ Isso sobe a API e o frontend ao mesmo tempo. Pressione `Ctrl+C` para encerrar os
 
 - API: http://localhost:8000 (docs em http://localhost:8000/docs)
 - Interface: http://localhost:5173
-
-> Os scripts ficam em `frontend/package.json`: 
-- `npm run dev` sobe API + frontend
-- `npm run dev:api` sobe só a API e `npm run dev:web` sobe só o frontend.
 
 ### Opção 2 — dois terminais (backend e frontend separados)
 
@@ -61,7 +56,7 @@ Abra **dois terminais**.
 ```bash
 cd "/caminho/para/dolar"
 source .venv/bin/activate
-python -m uvicorn app.main:app --reload
+uvicorn app.main:app --reload
 ```
 
 **Terminal 2 — Frontend:**
@@ -69,8 +64,12 @@ python -m uvicorn app.main:app --reload
 ```bash
 cd "/caminho/para/dolar/frontend"
 npm install
-npm run dev:web
+npm run dev
 ```
 
-> **Importante:** os comandos do backend (`python -m uvicorn app.main:app`) precisam ser executados **de dentro da pasta do projeto**. Se você rodar de outra pasta (ex.: `~`), vai dar `ModuleNotFoundError: No module named 'app'`.
+> **Importante:** os comandos do backend (`uvicorn app.main:app`) precisam ser executados **de dentro da pasta do projeto**. Se você rodar de outra pasta (ex.: `~`), vai dar `ModuleNotFoundError: No module named 'app'`.
 
+## Endpoints
+
+- `GET /dolar/` — lista os produtos e o total
+- `POST /dolar/` — cadastra um produto: `{ "title": str, "preco_dolar": float, "preco_do_produto_em_dolar": float }`
